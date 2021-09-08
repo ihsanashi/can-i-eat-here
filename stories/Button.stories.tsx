@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './Button';
+import { Button } from '../src/components/Forms/Button';
 
 export default {
   title: 'Example/Button',
@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  variant: 'solid',
   label: 'Button',
 };
 
